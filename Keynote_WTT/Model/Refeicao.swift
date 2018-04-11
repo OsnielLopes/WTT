@@ -7,9 +7,12 @@
 //
 
 import Foundation
+import UIKit
+import CoreData
 
 struct Refeicao {
-    var id: Int!
+    var id: NSManagedObjectID!
     var nome: String!
     var hora: Date!
+    var image: UIImage!
 }
