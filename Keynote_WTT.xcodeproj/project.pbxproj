@@ -15,9 +15,9 @@
 		494CFE9B207C179F00339DA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494CFE9A207C179F00339DA5 /* Assets.xcassets */; };
 		494CFE9E207C179F00339DA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494CFE9C207C179F00339DA5 /* LaunchScreen.storyboard */; };
 		BDB0A7FB207E5CDA0041363C /* NSRefeicao+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB0A7F9207E5CDA0041363C /* NSRefeicao+CoreDataClass.swift */; };
-		BDB0A7FC207E5CDA0041363C /* NSRefeicao+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB0A7FA207E5CDA0041363C /* NSRefeicao+CoreDataProperties.swift */; };
 		BDB0A7FE207E5CE30041363C /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB0A7FD207E5CE30041363C /* Refeicao.swift */; };
-		BDB0A801207E5DD50041363C /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB0A800207E5DD50041363C /* DatabaseController.swift */; };
+		BDB0A802207E77980041363C /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB0A800207E5DD50041363C /* DatabaseController.swift */; };
+		BDB0A803207E77CE0041363C /* NSRefeicao+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB0A7FA207E5CDA0041363C /* NSRefeicao+CoreDataProperties.swift */; };
 		BDF774EA207E59BA00198F07 /* Keynote_WTT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDF774E8207E59BA00198F07 /* Keynote_WTT.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -164,13 +164,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4923DB1E207D9ED3003039C1 /* RefeicaoData.swift in Sources */,
+				4923DB1E207D9ED3003039C1 /* RefeicaoDataManager.swift in Sources */,
 				494CFE94207C179A00339DA5 /* AppDelegate.swift in Sources */,
 				BDB0A7FE207E5CE30041363C /* Refeicao.swift in Sources */,
 				BDF774EA207E59BA00198F07 /* Keynote_WTT.xcdatamodeld in Sources */,
+				BDB0A802207E77980041363C /* DatabaseController.swift in Sources */,
 				4923DB22207DA12D003039C1 /* NovaRefeicaoViewController.swift in Sources */,
 				BDB0A7FB207E5CDA0041363C /* NSRefeicao+CoreDataClass.swift in Sources */,
 				4923DB24207DA2B9003039C1 /* ReifeicoesTableViewController.swift in Sources */,
+				BDB0A803207E77CE0041363C /* NSRefeicao+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
