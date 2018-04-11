@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		4923DB1E207D9ED3003039C1 /* RefeicaoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923DB1D207D9ED3003039C1 /* RefeicaoDataManager.swift */; };
 		4923DB22207DA12D003039C1 /* NovaRefeicaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923DB21207DA12D003039C1 /* NovaRefeicaoViewController.swift */; };
-		4923DB24207DA2B9003039C1 /* ReifeicoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923DB23207DA2B9003039C1 /* ReifeicoesTableViewController.swift */; };
+		4923DB24207DA2B9003039C1 /* RefeicoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923DB23207DA2B9003039C1 /* RefeicoesTableViewController.swift */; };
 		4923DB26207E780A003039C1 /* RefeicaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923DB25207E780A003039C1 /* RefeicaoTableViewCell.swift */; };
 		494CFE94207C179A00339DA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494CFE93207C179A00339DA5 /* AppDelegate.swift */; };
 		494CFE99207C179A00339DA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494CFE97207C179A00339DA5 /* Main.storyboard */; };
 		494CFE9B207C179F00339DA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494CFE9A207C179F00339DA5 /* Assets.xcassets */; };
 		494CFE9E207C179F00339DA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494CFE9C207C179F00339DA5 /* LaunchScreen.storyboard */; };
+		BDA1762F207E8BB2003DC957 /* Food101.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BDA1762E207E8BB2003DC957 /* Food101.mlmodel */; };
+		BDA17631207E8BBA003DC957 /* FoodRecognizerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA17630207E8BBA003DC957 /* FoodRecognizerManager.swift */; };
 		BDB0A7FB207E5CDA0041363C /* NSRefeicao+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB0A7F9207E5CDA0041363C /* NSRefeicao+CoreDataClass.swift */; };
 		BDB0A7FE207E5CE30041363C /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB0A7FD207E5CE30041363C /* Refeicao.swift */; };
 		BDB0A802207E77980041363C /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB0A800207E5DD50041363C /* DatabaseController.swift */; };
@@ -26,7 +28,7 @@
 /* Begin PBXFileReference section */
 		4923DB1D207D9ED3003039C1 /* RefeicaoDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicaoDataManager.swift; sourceTree = "<group>"; };
 		4923DB21207DA12D003039C1 /* NovaRefeicaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaRefeicaoViewController.swift; sourceTree = "<group>"; };
-		4923DB23207DA2B9003039C1 /* ReifeicoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReifeicoesTableViewController.swift; sourceTree = "<group>"; };
+		4923DB23207DA2B9003039C1 /* RefeicoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicoesTableViewController.swift; sourceTree = "<group>"; };
 		4923DB25207E780A003039C1 /* RefeicaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicaoTableViewCell.swift; sourceTree = "<group>"; };
 		494CFE90207C179A00339DA5 /* Keynote_WTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keynote_WTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		494CFE93207C179A00339DA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +36,8 @@
 		494CFE9A207C179F00339DA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		494CFE9D207C179F00339DA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		494CFE9F207C179F00339DA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA1762E207E8BB2003DC957 /* Food101.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Food101.mlmodel; sourceTree = "<group>"; };
+		BDA17630207E8BBA003DC957 /* FoodRecognizerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodRecognizerManager.swift; sourceTree = "<group>"; };
 		BDB0A7F9207E5CDA0041363C /* NSRefeicao+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRefeicao+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BDB0A7FA207E5CDA0041363C /* NSRefeicao+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRefeicao+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BDB0A7FD207E5CE30041363C /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
@@ -73,17 +77,43 @@
 			isa = PBXGroup;
 			children = (
 				BDB0A7FF207E5D0E0041363C /* Model */,
-				494CFE93207C179A00339DA5 /* AppDelegate.swift */,
+				BDA17633207E8D1A003DC957 /* Controller */,
+				BDA17632207E8D0A003DC957 /* View */,
+				BDA17634207E8D2A003DC957 /* Aux */,
+			);
+			path = Keynote_WTT;
+			sourceTree = "<group>";
+		};
+		BDA17632207E8D0A003DC957 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				494CFE97207C179A00339DA5 /* Main.storyboard */,
-				4923DB25207E780A003039C1 /* RefeicaoTableViewCell.swift */,
-				4923DB23207DA2B9003039C1 /* ReifeicoesTableViewController.swift */,
-				4923DB21207DA12D003039C1 /* NovaRefeicaoViewController.swift */,
-				494CFE9A207C179F00339DA5 /* Assets.xcassets */,
 				494CFE9C207C179F00339DA5 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BDA17633207E8D1A003DC957 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				494CFE93207C179A00339DA5 /* AppDelegate.swift */,
+				4923DB25207E780A003039C1 /* RefeicaoTableViewCell.swift */,
+				4923DB23207DA2B9003039C1 /* RefeicoesTableViewController.swift */,
+				4923DB21207DA12D003039C1 /* NovaRefeicaoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BDA17634207E8D2A003DC957 /* Aux */ = {
+			isa = PBXGroup;
+			children = (
+				BDA17630207E8BBA003DC957 /* FoodRecognizerManager.swift */,
+				BDA1762E207E8BB2003DC957 /* Food101.mlmodel */,
+				494CFE9A207C179F00339DA5 /* Assets.xcassets */,
 				494CFE9F207C179F00339DA5 /* Info.plist */,
 				BDB0A808207E7A900041363C /* Extensions.swift */,
 			);
-			path = Keynote_WTT;
+			path = Aux;
 			sourceTree = "<group>";
 		};
 		BDB0A7FF207E5D0E0041363C /* Model */ = {
@@ -179,7 +209,9 @@
 				4923DB22207DA12D003039C1 /* NovaRefeicaoViewController.swift in Sources */,
 				BDB0A809207E7A900041363C /* Extensions.swift in Sources */,
 				BDB0A7FB207E5CDA0041363C /* NSRefeicao+CoreDataClass.swift in Sources */,
-				4923DB24207DA2B9003039C1 /* ReifeicoesTableViewController.swift in Sources */,
+				BDA1762F207E8BB2003DC957 /* Food101.mlmodel in Sources */,
+				4923DB24207DA2B9003039C1 /* RefeicoesTableViewController.swift in Sources */,
+				BDA17631207E8BBA003DC957 /* FoodRecognizerManager.swift in Sources */,
 				4923DB26207E780A003039C1 /* RefeicaoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,7 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VLLH384AC4;
-				INFOPLIST_FILE = Keynote_WTT/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Keynote_WTT/Aux/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,7 +376,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VLLH384AC4;
-				INFOPLIST_FILE = Keynote_WTT/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Keynote_WTT/Aux/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
