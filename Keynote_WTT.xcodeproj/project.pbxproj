@@ -169,6 +169,7 @@
 				494CFE94207C179A00339DA5 /* AppDelegate.swift in Sources */,
 				BDB0A7FE207E5CE30041363C /* Refeicao.swift in Sources */,
 				BDF774EA207E59BA00198F07 /* Keynote_WTT.xcdatamodeld in Sources */,
+				BDB0A802207E77980041363C /* DatabaseController.swift in Sources */,
 				4923DB22207DA12D003039C1 /* NovaRefeicaoViewController.swift in Sources */,
 				BDB0A7FB207E5CDA0041363C /* NSRefeicao+CoreDataClass.swift in Sources */,
 				4923DB24207DA2B9003039C1 /* ReifeicoesTableViewController.swift in Sources */,
