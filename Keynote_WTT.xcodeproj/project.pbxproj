@@ -11,7 +11,6 @@
 		4923DB22207DA12D003039C1 /* NovaRefeicaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923DB21207DA12D003039C1 /* NovaRefeicaoViewController.swift */; };
 		4923DB24207DA2B9003039C1 /* ReifeicoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923DB23207DA2B9003039C1 /* ReifeicoesTableViewController.swift */; };
 		494CFE94207C179A00339DA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494CFE93207C179A00339DA5 /* AppDelegate.swift */; };
-		494CFE96207C179A00339DA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494CFE95207C179A00339DA5 /* ViewController.swift */; };
 		494CFE99207C179A00339DA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494CFE97207C179A00339DA5 /* Main.storyboard */; };
 		494CFE9B207C179F00339DA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494CFE9A207C179F00339DA5 /* Assets.xcassets */; };
 		494CFE9E207C179F00339DA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494CFE9C207C179F00339DA5 /* LaunchScreen.storyboard */; };
@@ -28,7 +27,6 @@
 		4923DB23207DA2B9003039C1 /* ReifeicoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReifeicoesTableViewController.swift; sourceTree = "<group>"; };
 		494CFE90207C179A00339DA5 /* Keynote_WTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keynote_WTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		494CFE93207C179A00339DA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		494CFE95207C179A00339DA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		494CFE98207C179A00339DA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		494CFE9A207C179F00339DA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		494CFE9D207C179F00339DA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 			children = (
 				BDB0A7FF207E5D0E0041363C /* Model */,
 				494CFE93207C179A00339DA5 /* AppDelegate.swift */,
-				494CFE95207C179A00339DA5 /* ViewController.swift */,
 				494CFE97207C179A00339DA5 /* Main.storyboard */,
 				4923DB23207DA2B9003039C1 /* ReifeicoesTableViewController.swift */,
 				4923DB21207DA12D003039C1 /* NovaRefeicaoViewController.swift */,
@@ -167,10 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDB0A801207E5DD50041363C /* DatabaseController.swift in Sources */,
-				BDB0A7FC207E5CDA0041363C /* NSRefeicao+CoreDataProperties.swift in Sources */,
-				494CFE96207C179A00339DA5 /* ViewController.swift in Sources */,
-				4923DB1E207D9ED3003039C1 /* RefeicaoDataManager.swift in Sources */,
+				4923DB1E207D9ED3003039C1 /* RefeicaoData.swift in Sources */,
 				494CFE94207C179A00339DA5 /* AppDelegate.swift in Sources */,
 				BDB0A7FE207E5CE30041363C /* Refeicao.swift in Sources */,
 				BDF774EA207E59BA00198F07 /* Keynote_WTT.xcdatamodeld in Sources */,
