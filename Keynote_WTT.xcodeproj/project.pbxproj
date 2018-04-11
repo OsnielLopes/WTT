@@ -18,6 +18,7 @@
 		BDB0A7FB207E5CDA0041363C /* NSRefeicao+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB0A7F9207E5CDA0041363C /* NSRefeicao+CoreDataClass.swift */; };
 		BDB0A7FC207E5CDA0041363C /* NSRefeicao+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB0A7FA207E5CDA0041363C /* NSRefeicao+CoreDataProperties.swift */; };
 		BDB0A7FE207E5CE30041363C /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB0A7FD207E5CE30041363C /* Refeicao.swift */; };
+		BDB0A801207E5DD50041363C /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB0A800207E5DD50041363C /* DatabaseController.swift */; };
 		BDF774EA207E59BA00198F07 /* Keynote_WTT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDF774E8207E59BA00198F07 /* Keynote_WTT.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		BDB0A7F9207E5CDA0041363C /* NSRefeicao+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRefeicao+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BDB0A7FA207E5CDA0041363C /* NSRefeicao+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRefeicao+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BDB0A7FD207E5CE30041363C /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
+		BDB0A800207E5DD50041363C /* DatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
 		BDF774E9207E59BA00198F07 /* Keynote_WTT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Keynote_WTT.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,11 +86,12 @@
 		BDB0A7FF207E5D0E0041363C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BDB0A7FA207E5CDA0041363C /* NSRefeicao+CoreDataProperties.swift */,
-				4923DB1D207D9ED3003039C1 /* RefeicaoData.swift */,
 				BDF774E8207E59BA00198F07 /* Keynote_WTT.xcdatamodeld */,
-				BDB0A7FD207E5CE30041363C /* Refeicao.swift */,
+				BDB0A7FA207E5CDA0041363C /* NSRefeicao+CoreDataProperties.swift */,
 				BDB0A7F9207E5CDA0041363C /* NSRefeicao+CoreDataClass.swift */,
+				BDB0A7FD207E5CE30041363C /* Refeicao.swift */,
+				4923DB1D207D9ED3003039C1 /* RefeicaoData.swift */,
+				BDB0A800207E5DD50041363C /* DatabaseController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDB0A801207E5DD50041363C /* DatabaseController.swift in Sources */,
 				BDB0A7FC207E5CDA0041363C /* NSRefeicao+CoreDataProperties.swift in Sources */,
 				494CFE96207C179A00339DA5 /* ViewController.swift in Sources */,
 				4923DB1E207D9ED3003039C1 /* RefeicaoData.swift in Sources */,

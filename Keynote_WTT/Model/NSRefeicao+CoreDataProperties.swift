@@ -9,6 +9,7 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 
 extension NSRefeicao {
@@ -16,9 +17,20 @@ extension NSRefeicao {
     @nonobjc public class func fetchRequest() -> NSFetchRequest<NSRefeicao> {
         return NSFetchRequest<NSRefeicao>(entityName: "NSRefeicao")
     }
+    
+    @nonobjc public class func fetchRequest(with objectID: NSManagedObjectID) -> NSFetchRequest<NSRefeicao> {
+        return NSFetchRequest<NSRefeicao>(entityName: "NSRefeicao")
+    }
 
     @NSManaged public var date: NSDate?
     @NSManaged public var image: NSData?
     @NSManaged public var name: String?
 
+    public func setPicture(pic: UIImage) {
+        self.image = NSData(data: UIImageJPEGRepresentation(pic, 0.9)!)
+    }
+    
+    public func getPicture() -> UIImage {
+        return UIImage(data: self.image! as Data)!
+    }
 }
