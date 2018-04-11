@@ -72,6 +72,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Escanear"/>
                                 <connections>
+                                    <action selector="scanFoodButtonPressed:" destination="oWR-4U-hUL" eventType="touchUpInside" id="XIX-KM-Mbi"/>
                                     <segue destination="Lzl-rN-PU8" kind="show" id="xfV-vt-PYL"/>
                                 </connections>
                             </button>

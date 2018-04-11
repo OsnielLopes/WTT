@@ -11,34 +11,38 @@ import UIKit
 class NovaRefeicaoViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
-    let data: RefeicaoData! = nil
+    
+    var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.imagePicker = UIImagePickerController()
+        self.imagePicker.delegate = self
+        self.imagePicker.sourceType = .camera
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.textField.isEnabled = false
     }
     
     @IBAction func salvarRefeicao(_ sender: Any) {
-        if !(textField.text?.isEmpty)! {
-            let refeicao = Refeicao(id: 0, nome: textField.text, hora: Date())
-            data.add(refeicao: refeicao)
+        if let name = self.textField.text {
+            let refeicao = Refeicao.init(id: nil, nome: name, hora: Date(), image: UIImage())
+            RefeicaoDataManager.shared.add(refeicao: refeicao)
         }
     }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func scanFoodButtonPressed(_ sender: Any) {
+        self.present(self.imagePicker, animated: true, completion: nil)
     }
-    */
+}
 
+extension NovaRefeicaoViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        
+    }
+    
 }

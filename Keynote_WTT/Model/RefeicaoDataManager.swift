@@ -10,15 +10,9 @@ import Foundation
 import CoreData
 import UIKit
 
-protocol RefeicaoData {
-    func getAll() -> [Refeicao]
-    func add(refeicao: Refeicao)
-    func remove(id: NSManagedObjectID)
-}
-
-class DatabaseManager: RefeicaoData {
+class RefeicaoDataManager {
     
-    var shared: DatabaseManager = DatabaseManager()
+    static public var shared = RefeicaoDataManager()
     
     private init() { }
     

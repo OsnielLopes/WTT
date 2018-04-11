@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4923DB1E207D9ED3003039C1 /* RefeicaoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923DB1D207D9ED3003039C1 /* RefeicaoData.swift */; };
+		4923DB1E207D9ED3003039C1 /* RefeicaoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923DB1D207D9ED3003039C1 /* RefeicaoDataManager.swift */; };
 		4923DB22207DA12D003039C1 /* NovaRefeicaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923DB21207DA12D003039C1 /* NovaRefeicaoViewController.swift */; };
 		4923DB24207DA2B9003039C1 /* ReifeicoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923DB23207DA2B9003039C1 /* ReifeicoesTableViewController.swift */; };
 		494CFE94207C179A00339DA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494CFE93207C179A00339DA5 /* AppDelegate.swift */; };
@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4923DB1D207D9ED3003039C1 /* RefeicaoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicaoData.swift; sourceTree = "<group>"; };
+		4923DB1D207D9ED3003039C1 /* RefeicaoDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicaoDataManager.swift; sourceTree = "<group>"; };
 		4923DB21207DA12D003039C1 /* NovaRefeicaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaRefeicaoViewController.swift; sourceTree = "<group>"; };
 		4923DB23207DA2B9003039C1 /* ReifeicoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReifeicoesTableViewController.swift; sourceTree = "<group>"; };
 		494CFE90207C179A00339DA5 /* Keynote_WTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keynote_WTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,7 +90,7 @@
 				BDB0A7FA207E5CDA0041363C /* NSRefeicao+CoreDataProperties.swift */,
 				BDB0A7F9207E5CDA0041363C /* NSRefeicao+CoreDataClass.swift */,
 				BDB0A7FD207E5CE30041363C /* Refeicao.swift */,
-				4923DB1D207D9ED3003039C1 /* RefeicaoData.swift */,
+				4923DB1D207D9ED3003039C1 /* RefeicaoDataManager.swift */,
 				BDB0A800207E5DD50041363C /* DatabaseController.swift */,
 			);
 			path = Model;
@@ -170,7 +170,7 @@
 				BDB0A801207E5DD50041363C /* DatabaseController.swift in Sources */,
 				BDB0A7FC207E5CDA0041363C /* NSRefeicao+CoreDataProperties.swift in Sources */,
 				494CFE96207C179A00339DA5 /* ViewController.swift in Sources */,
-				4923DB1E207D9ED3003039C1 /* RefeicaoData.swift in Sources */,
+				4923DB1E207D9ED3003039C1 /* RefeicaoDataManager.swift in Sources */,
 				494CFE94207C179A00339DA5 /* AppDelegate.swift in Sources */,
 				BDB0A7FE207E5CE30041363C /* Refeicao.swift in Sources */,
 				BDF774EA207E59BA00198F07 /* Keynote_WTT.xcdatamodeld in Sources */,
