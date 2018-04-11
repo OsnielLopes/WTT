@@ -33,7 +33,14 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Refeicao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fc-Gd-2lD">
-                                            <rect key="frame" x="108" y="34" width="237" height="21"/>
+                                            <rect key="frame" x="98" y="11" width="237" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiP-yf-82Z">
+                                            <rect key="frame" x="98" y="58" width="37" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -46,6 +53,11 @@
                                         <constraint firstItem="0E2-y8-8lp" firstAttribute="top" secondItem="qg0-bp-ttb" secondAttribute="top" id="dvC-3Q-Sl2"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="horaLabel" destination="fiP-yf-82Z" id="aZZ-yY-JH4"/>
+                                    <outlet property="nomeLabel" destination="6fc-Gd-2lD" id="0bx-tK-LK2"/>
+                                    <outlet property="refeicaoImage" destination="0E2-y8-8lp" id="zgz-46-egI"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
