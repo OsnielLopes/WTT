@@ -10,8 +10,11 @@ import UIKit
 
 class NovaRefeicaoViewController: UIViewController {
 
+    //IBOutlets
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var imageView: UIImageView!
     
+    //Instance Variables
     var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
