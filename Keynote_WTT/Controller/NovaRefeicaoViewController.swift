@@ -47,6 +47,7 @@ class NovaRefeicaoViewController: UIViewController {
         if let name = self.textField.text, let image = self.refeicaoImage {
             let refeicao = Refeicao.init(id: nil, nome: name, hora: Date(), image: image)
             RefeicaoDataManager.shared.add(refeicao: refeicao)
+            self.navigationController?.popToRootViewController(animated: true)
         }
     }
 
@@ -62,10 +63,11 @@ class NovaRefeicaoViewController: UIViewController {
 extension NovaRefeicaoViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        self.imagePicker.dismiss(animated: true, completion: nil)
         guard let imgPicked = info[UIImagePickerControllerOriginalImage] as? UIImage else { return }
         self.refeicaoImage = imgPicked
         self.textField.text = FoodRecognizerManager.shared.recognizeImage(imgPicked)
-        self.imagePicker.dismiss(animated: true, completion: nil)
+        self.imageView.image = imgPicked
     }
     
 }
