@@ -22,7 +22,7 @@ class RefeicaoDataManager {
             if let refeicoes = entities as? [NSRefeicao] {
                 var rs: [Refeicao] = []
                 for r in refeicoes {
-                    rs.append(Refeicao(id: r.objectID, nome: r.name, hora: r.date! as Date, image: r.getPicture()))
+                    rs.append(Refeicao(nome: r.name, hora: r.date! as Date, image: r.getPicture()))
                 }
                 return rs
             }
@@ -42,13 +42,31 @@ class RefeicaoDataManager {
         DatabaseController.saveContext()
     }
     
-    func remove(id: NSManagedObjectID) {
-        do {
-            let obj = try DatabaseController.persistentContainer.viewContext.existingObject(with: id)
-            DatabaseController.persistentContainer.viewContext.delete(obj)
+    
+    func deleteRecords(ip: IndexPath) -> Void {
+        
+        let managedContext = DatabaseController.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "NSRefeicao")
+        
+        let result = try? managedContext.fetch(fetchRequest)
+        
+        var resultData = result as! [NSRefeicao]
+        let removedCell = resultData[ip.row]
+        managedContext.delete(removedCell)
+        
+        do{
+            try managedContext.save()
         } catch {
-            print("Failed to remove refeicao with id \(id)")
-        }
+            print("Failed to remove meal")
     }
+}
+//    func removeRecord(id: NSManagedObjectID) {
+//        do {
+//            let obj = try DatabaseController.persistentContainer.viewContext.existingObject(with: id)
+//            DatabaseController.persistentContainer.viewContext.delete(obj)
+//        } catch {
+//            print("Failed to remove refeicao with id \(id)")
+//        }
+//    }
     
 }

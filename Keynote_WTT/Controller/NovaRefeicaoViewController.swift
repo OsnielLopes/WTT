@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NovaRefeicaoViewController: UIViewController {
+class NovaRefeicaoViewController: UIViewController, UITextFieldDelegate {
 
     //IBOutlets
     @IBOutlet weak var textField: UITextField!
@@ -42,25 +42,70 @@ class NovaRefeicaoViewController: UIViewController {
         super.viewDidDisappear(animated)
         self.firstTime = false
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // Hide the navigation bar on the this view controller
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
     
     @IBAction func salvarRefeicao(_ sender: Any) {
         if let name = self.textField.text, let image = self.refeicaoImage {
-            let refeicao = Refeicao.init(id: nil, nome: name, hora: Date(), image: image)
+            let refeicao = Refeicao.init(nome: name, hora: Date(), image: image)
             RefeicaoDataManager.shared.add(refeicao: refeicao)
-            self.navigationController?.popToRootViewController(animated: true)
+            
+            //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            //let viewController = storyboard.instantiateViewController(withIdentifier: "refeições")
+            self.navigationController?.popViewController(animated: true)
         }
     }
 
     @IBAction func scanFoodButtonPressed(_ sender: Any) {
+        
         self.present(self.imagePicker, animated: true, completion: nil)
     }
     
     override func performSegue(withIdentifier identifier: String, sender: Any?) {
         self.firstTime = false
     }
+    
+    // MARK: - Keyboard Delegates
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        moveTextField(textField, moveDistance: -250, up: true)
+    }
+    
+    // Finish Editing The Text Field
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        moveTextField(textField, moveDistance: -250, up: false)
+    }
+    
+    // Hide the keyboard when the return key pressed
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    // Move the text field in a pretty animation!
+    func moveTextField(_ textField: UITextField, moveDistance: Int, up: Bool) {
+        let moveDuration = 0.3
+        let movement: CGFloat = CGFloat(up ? moveDistance : -moveDistance)
+        
+        UIView.beginAnimations("animateTextField", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(moveDuration)
+        self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement)
+        UIView.commitAnimations()
+    }
+   
 }
 
 extension NovaRefeicaoViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "main")
+        picker.pushViewController(viewController, animated: true)
+    }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         self.imagePicker.dismiss(animated: true, completion: nil)
@@ -68,6 +113,8 @@ extension NovaRefeicaoViewController: UINavigationControllerDelegate, UIImagePic
         self.refeicaoImage = imgPicked
         self.textField.text = FoodRecognizerManager.shared.recognizeImage(imgPicked)
         self.imageView.image = imgPicked
+        self.imageView.layer.cornerRadius = 5
     }
+    
     
 }

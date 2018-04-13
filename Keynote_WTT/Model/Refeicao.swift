@@ -11,7 +11,6 @@ import UIKit
 import CoreData
 
 struct Refeicao {
-    var id: NSManagedObjectID!
     var nome: String!
     var hora: Date!
     var image: UIImage!
